@@ -1,0 +1,11 @@
+title Send new note spa
+
+note over browser
+user writes note and clicks button. Note is sent to server 
+and updated notes-list is rendered
+end note
+browser -> server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa {content: "Paljonko viive?", date: "2019-11-26T17:05:02.926Z"}
+note over server 
+server 
+end note
+server -> browser: HTTP Status 201 {"message":"note created"}

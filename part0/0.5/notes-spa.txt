@@ -1,0 +1,17 @@
+title Open note app spa
+
+browser -> server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+server -> browser: HTML code
+browser -> server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server -> browser: CSS file
+browser -> server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+server -> browser: JavaScript-file
+note over browser:
+selain alkaa suorittaa js-koodia
+joka pyytää JSON-datan palvelimelta
+end note
+browser -> server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server -> browser: JSON-file
+note over browser:
+selain renderöi muistiinpanot
+end note
